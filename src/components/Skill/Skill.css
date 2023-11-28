@@ -1,0 +1,155 @@
+.container{
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 40px;
+}
+
+.folder {
+    color: var(--body-color);
+
+}
+
+.skill-section {
+    background-color: var(--body-background);
+}
+
+@media(min-width: 768px){
+    .container{
+        margin: 0 auto;
+    }
+}
+
+@media(main-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media(main-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media(main-width: 1400px){
+    .container{
+        max-width: 1350px;
+    }
+}
+
+@media(main-width: 650px){
+    .container{
+        max-width: 600px;
+    }
+}
+
+ .center{
+    text-align: center; 
+}
+
+.skill-section{
+    padding: 65px 0 100px;
+    position: relative;
+}
+
+.skill-section .skill-items{
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20;
+}
+
+.skill-item{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.skill-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.skill-info p{
+    line-height: 22px;
+    opacity: 1;
+    -webkit-animation: showText 0.5s 1s linear forwards;
+    animation: showText 0.5s 1s linear forwards;
+    padding: 10px;
+    color: var(--body-color);
+    font-size: 20px;
+}
+
+.progress-line{
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    background-color: var(--card-color);
+    border-radius: 50px;
+    position: relative;
+}
+
+.progress-line span{
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: var(--color-primary);
+    transition: 1s all;
+}
+
+.--color-primary span.animate{
+    -webkit-animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@-webkit-keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animate{
+    100%{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes animate{
+    100%{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
