@@ -79,9 +79,6 @@ h4{
   .scroll__down{
     margin-top: 30rem;
   }
-  .me1 {
-    display: none;
-}
 
 /*==========MEDIA QUERIES (SMALL DEVICES)*/
 @media screen and (max-width: 768px) {
