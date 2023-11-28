@@ -3,6 +3,8 @@ header {
   height: 100vh;
   overflow: hidden;
   color: var(--body-color);
+  min-height: 100vh;
+  max-height: auto;
 
 }
 
